@@ -1,0 +1,49 @@
+entity Restaurante {
+	nome String required
+}
+
+entity Cardapio {
+	nome String required
+}
+
+entity ItemCardapio {
+	categoria Categoria required,
+    nome String required,
+    descricao String required,
+    valor BigDecimal
+}
+
+enum Categoria {
+	PRATO, BEBIDA, SOBREMESA
+}
+
+entity Pedido {
+	formaPagamento FormaPagamento required,
+    dataHora ZonedDateTime required,
+    senha Integer unique
+}
+
+entity ItemPedido {
+    quantidade Integer min(1)
+}
+
+enum FormaPagamento {
+	CREDITO, DEBITO, PIX
+}
+
+relationship OneToMany {
+	Restaurante to Cardapio{restaurante required},
+    Restaurante to Pedido{restaurante required},
+    Cardapio to ItemCardapio{cardapio required},
+    Pedido to ItemPedido{pedido required}
+}
+
+relationship OneToOne {
+	ItemPedido{item required} to ItemCardapio
+}
+
+
+
+
+
+
