@@ -15,7 +15,16 @@
     <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005936_added_entity_Restaurante.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005937_added_entity_Cardapio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005938_added_entity_ItemCardapio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005939_added_entity_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005940_added_entity_ItemPedido.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20210430005937_added_entity_constraints_Cardapio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005938_added_entity_constraints_ItemCardapio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005939_added_entity_constraints_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430005940_added_entity_constraints_ItemPedido.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,46 @@
+{
+  "name": "Pedido",
+  "fields": [
+    {
+      "fieldName": "formaPagamento",
+      "fieldType": "FormaPagamento",
+      "fieldValues": "CREDITO,DEBITO,PIX",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dataHora",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "senha",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["unique"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "itemPedido",
+      "otherEntityRelationshipName": "pedido",
+      "relationshipName": "itemPedido"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "restaurante",
+      "otherEntityRelationshipName": "pedido",
+      "relationshipValidateRules": "required",
+      "relationshipName": "restaurante"
+    }
+  ],
+  "entityTableName": "pedido",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210430005939"
+}

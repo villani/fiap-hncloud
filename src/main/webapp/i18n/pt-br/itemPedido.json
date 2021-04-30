@@ -1,0 +1,26 @@
+{
+  "qrDapioApp": {
+    "itemPedido": {
+      "home": {
+        "title": "Item Pedidos",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Item Pedido",
+        "createOrEditLabel": "Criar ou editar Item Pedido",
+        "notFound": "Nenhum Item Pedido encontrado"
+      },
+      "created": "Um novo Item Pedido foi criado com o identificador {{ param }}",
+      "updated": "Um Item Pedido foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Item Pedido foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Item Pedido {{ id }}?"
+      },
+      "detail": {
+        "title": "Item Pedido"
+      },
+      "id": "ID",
+      "quantidade": "Quantidade",
+      "item": "Item",
+      "pedido": "Pedido"
+    }
+  }
+}

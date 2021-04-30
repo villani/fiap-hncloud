@@ -1,0 +1,44 @@
+{
+  "name": "ItemCardapio",
+  "fields": [
+    {
+      "fieldName": "categoria",
+      "fieldType": "Categoria",
+      "fieldValues": "PRATO,BEBIDA,SOBREMESA",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descricao",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "valor",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cardapio",
+      "otherEntityRelationshipName": "itemCardapio",
+      "relationshipValidateRules": "required",
+      "relationshipName": "cardapio"
+    }
+  ],
+  "entityTableName": "item_cardapio",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210430005938"
+}
