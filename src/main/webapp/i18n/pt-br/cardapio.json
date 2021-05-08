@@ -1,0 +1,26 @@
+{
+  "qrDapioApp": {
+    "cardapio": {
+      "home": {
+        "title": "Cardapios",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Cardapio",
+        "createOrEditLabel": "Criar ou editar Cardapio",
+        "notFound": "Nenhum Cardapio encontrado"
+      },
+      "created": "Um novo Cardapio foi criado com o identificador {{ param }}",
+      "updated": "Um Cardapio foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Cardapio foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Cardapio {{ id }}?"
+      },
+      "detail": {
+        "title": "Cardapio"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "itemCardapio": "Item Cardapio",
+      "restaurante": "Restaurante"
+    }
+  }
+}

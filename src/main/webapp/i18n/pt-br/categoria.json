@@ -1,0 +1,10 @@
+{
+  "qrDapioApp": {
+    "Categoria": {
+      "null": "",
+      "PRATO": "PRATO",
+      "BEBIDA": "BEBIDA",
+      "SOBREMESA": "SOBREMESA"
+    }
+  }
+}

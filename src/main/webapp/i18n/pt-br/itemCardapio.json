@@ -1,0 +1,28 @@
+{
+  "qrDapioApp": {
+    "itemCardapio": {
+      "home": {
+        "title": "Item Cardapios",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Item Cardapio",
+        "createOrEditLabel": "Criar ou editar Item Cardapio",
+        "notFound": "Nenhum Item Cardapio encontrado"
+      },
+      "created": "Um novo Item Cardapio foi criado com o identificador {{ param }}",
+      "updated": "Um Item Cardapio foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Item Cardapio foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Item Cardapio {{ id }}?"
+      },
+      "detail": {
+        "title": "Item Cardapio"
+      },
+      "id": "ID",
+      "categoria": "Categoria",
+      "nome": "Nome",
+      "descricao": "Descricao",
+      "valor": "Valor",
+      "cardapio": "Cardapio"
+    }
+  }
+}

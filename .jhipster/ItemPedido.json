@@ -1,0 +1,38 @@
+{
+  "name": "ItemPedido",
+  "fields": [
+    {
+      "fieldName": "quantidade",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "1"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "itemCardapio",
+      "otherEntityRelationshipName": "itemPedido",
+      "relationshipValidateRules": "required",
+      "relationshipName": "item",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "pedido",
+      "otherEntityRelationshipName": "itemPedido",
+      "relationshipValidateRules": "required",
+      "relationshipName": "pedido"
+    }
+  ],
+  "entityTableName": "item_pedido",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210430005940"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Restaurante",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "cardapio",
+      "otherEntityRelationshipName": "restaurante",
+      "relationshipName": "cardapio"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "pedido",
+      "otherEntityRelationshipName": "restaurante",
+      "relationshipName": "pedido"
+    }
+  ],
+  "entityTableName": "restaurante",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210430005936"
+}
