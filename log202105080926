@@ -1,0 +1,1804 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< br.com.qrdapio:qr-dapio >-----------------------
+[INFO] Building QR Dapio 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.4.4:run (default-cli) > test-compile @ qr-dapio >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:copy-resources (default-resources) @ qr-dapio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 4 resources
+[INFO] Copying 28 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ qr-dapio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 4 resources
+[INFO] Copying 28 resources
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-versions) @ qr-dapio ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-dependencyConvergence) @ qr-dapio ---
+[WARNING] 
+Dependency convergence error for net.java.dev.jna:jna:5.2.0 paths to dependency are:
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.testcontainers:mariadb:1.15.2
+    +-org.testcontainers:jdbc:1.15.2
+      +-org.testcontainers:database-commons:1.15.2
+        +-org.testcontainers:testcontainers:1.15.2
+          +-org.rnorth.visible-assertions:visible-assertions:2.1.2
+            +-net.java.dev.jna:jna:5.2.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.testcontainers:mariadb:1.15.2
+    +-org.testcontainers:jdbc:1.15.2
+      +-org.testcontainers:database-commons:1.15.2
+        +-org.testcontainers:testcontainers:1.15.2
+          +-com.github.docker-java:docker-java-transport-zerodep:3.2.7
+            +-net.java.dev.jna:jna:5.5.0
+
+[WARNING] 
+Dependency convergence error for org.wildfly.common:wildfly-common:1.5.2.Final paths to dependency are:
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.springframework.boot:spring-boot-starter-undertow:2.4.4
+    +-io.undertow:undertow-core:2.2.5.Final
+      +-org.jboss.xnio:xnio-api:3.8.0.Final
+        +-org.wildfly.common:wildfly-common:1.5.2.Final
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.springframework.boot:spring-boot-starter-undertow:2.4.4
+    +-io.undertow:undertow-core:2.2.5.Final
+      +-org.jboss.xnio:xnio-api:3.8.0.Final
+        +-org.wildfly.client:wildfly-client-config:1.0.1.Final
+          +-org.wildfly.common:wildfly-common:1.2.0.Final
+
+[WARNING] 
+Dependency convergence error for org.apiguardian:apiguardian-api:1.1.0 paths to dependency are:
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.springframework.boot:spring-boot-starter-test:2.4.4
+    +-org.junit.jupiter:junit-jupiter:5.7.1
+      +-org.junit.jupiter:junit-jupiter-api:5.7.1
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.springframework.boot:spring-boot-starter-test:2.4.4
+    +-org.junit.jupiter:junit-jupiter:5.7.1
+      +-org.junit.jupiter:junit-jupiter-api:5.7.1
+        +-org.junit.platform:junit-platform-commons:1.7.1
+          +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.springframework.boot:spring-boot-starter-test:2.4.4
+    +-org.junit.jupiter:junit-jupiter:5.7.1
+      +-org.junit.jupiter:junit-jupiter-params:5.7.1
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.springframework.boot:spring-boot-starter-test:2.4.4
+    +-org.junit.jupiter:junit-jupiter:5.7.1
+      +-org.junit.jupiter:junit-jupiter-engine:5.7.1
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-com.tngtech.archunit:archunit-junit5-engine:0.17.0
+    +-com.tngtech.archunit:archunit-junit5-engine-api:0.17.0
+      +-org.junit.platform:junit-platform-engine:1.7.1
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.zalando:problem-spring-web:0.26.2
+    +-org.zalando:problem-violations:0.26.2
+      +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.zalando:problem-spring-web:0.26.2
+    +-org.zalando:problem-spring-common:0.26.2
+      +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.zalando:problem-spring-web:0.26.2
+    +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-org.zalando:problem-spring-web:0.26.2
+    +-org.zalando:faux-pas:0.8.0
+      +-org.apiguardian:apiguardian-api:1.0.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-junit:6.10.2
+    +-org.apiguardian:apiguardian-api:1.1.1
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-junit:6.10.2
+    +-io.cucumber:cucumber-core:6.10.2
+      +-io.cucumber:cucumber-expressions:10.3.0
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-junit:6.10.2
+    +-io.cucumber:cucumber-core:6.10.2
+      +-io.cucumber:datatable:3.5.0
+        +-org.apiguardian:apiguardian-api:1.1.0
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-junit:6.10.2
+    +-io.cucumber:cucumber-core:6.10.2
+      +-io.cucumber:cucumber-plugin:6.10.2
+        +-org.apiguardian:apiguardian-api:1.1.1
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-junit:6.10.2
+    +-io.cucumber:cucumber-core:6.10.2
+      +-io.cucumber:docstring:6.10.2
+        +-org.apiguardian:apiguardian-api:1.1.1
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-junit:6.10.2
+    +-io.cucumber:cucumber-core:6.10.2
+      +-org.apiguardian:apiguardian-api:1.1.1
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-java:6.10.2
+    +-org.apiguardian:apiguardian-api:1.1.1
+and
++-br.com.qrdapio:qr-dapio:0.0.1-SNAPSHOT
+  +-io.cucumber:cucumber-spring:6.10.2
+    +-org.apiguardian:apiguardian-api:1.1.1
+
+[WARNING] Rule 0: org.apache.maven.plugins.enforcer.DependencyConvergence failed with message:
+Failed while enforcing releasability. See above detailed error message.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (pre-unit-tests) @ qr-dapio ---
+[INFO] argLine set to -javaagent:/home/ubuntu/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/ubuntu/fiap-hncloud/target/jacoco.exec -Djava.security.egd=file:/dev/./urandom -Xmx256m
+[INFO] 
+[INFO] --- properties-maven-plugin:1.0.0:read-project-properties (default) @ qr-dapio ---
+[INFO] 
+[INFO] --- openapi-generator-maven-plugin:4.3.1:generate (default) @ qr-dapio ---
+[INFO] OpenAPI Generator: spring (server)
+[INFO] Generator 'spring' is considered stable.
+[INFO] ----------------------------------
+[INFO] Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[INFO] NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[INFO] Invoker Package Name, originally not set, is now derived from api package name: br.com.qrdapio.web
+[INFO] writing file /home/ubuntu/fiap-hncloud/target/generated-sources/openapi/src/main/java/br/com/qrdapio/web/api/ApiUtil.java
+[INFO] writing file /home/ubuntu/fiap-hncloud/target/generated-sources/openapi/.openapi-generator/VERSION
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.11.3:install-node-and-npm (install node and npm) @ qr-dapio ---
+[INFO] Node v14.16.0 is already installed.
+[INFO] NPM 7.8.0 is already installed.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.11.3:npm (npm install) @ qr-dapio ---
+[INFO] Running 'npm install' in /home/ubuntu/fiap-hncloud
+[INFO] 
+[INFO] added 2 packages, and audited 2327 packages in 5s
+[INFO] 
+[INFO] 2 high severity vulnerabilities
+[INFO] 
+[INFO] To address all issues, run:
+[INFO]   npm audit fix
+[INFO] 
+[INFO] Run `npm audit` for details.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.11.3:npm (webapp build dev) @ qr-dapio ---
+[INFO] npm not inheriting proxy config from Maven
+[INFO] Running 'npm run webapp:build' in /home/ubuntu/fiap-hncloud
+[INFO] 
+[INFO] > qr-dapio@0.0.1-SNAPSHOT webapp:build
+[INFO] > npm run clean-www && npm run webapp:build:dev
+[INFO] 
+[INFO] 
+[INFO] > qr-dapio@0.0.1-SNAPSHOT clean-www
+[INFO] > rimraf target/classes/static/app/{src,target/}
+[INFO] 
+[INFO] 
+[INFO] > qr-dapio@0.0.1-SNAPSHOT webapp:build:dev
+[INFO] > npm run webpack -- --config webpack/webpack.dev.js --env stats=minimal
+[INFO] 
+[INFO] 
+[INFO] > qr-dapio@0.0.1-SNAPSHOT webpack
+[INFO] > node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js "--config" "webpack/webpack.dev.js" "--env" "stats=minimal"
+[INFO] 
+[INFO] Webpack: Starting ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ❯ Compile modules
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (0%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (1%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (1%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (1%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (1%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (2%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (3%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (5%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (6%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (8%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (12%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (14%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (14%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (16%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (92%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (92%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (98%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (98%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (100%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (100%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (100%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (100%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (100%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ❯ Build modules (100%)
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (-2%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (-2%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (-2%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (1%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (1%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (1%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (4%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (4%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (7%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (7%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (10%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (10%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (12%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (12%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (15%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (15%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (18%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (18%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (21%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (24%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (24%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (26%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (26%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (26%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (29%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (29%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (32%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (32%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (35%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (35%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (37%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (37%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (37%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (40%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (40%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (43%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (43%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (43%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (46%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (46%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (49%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (49%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (51%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (51%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (51%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (54%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (54%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (57%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (57%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (57%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (60%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (60%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (63%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (63%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (65%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (65%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (65%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (68%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (68%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (68%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (71%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (71%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (74%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (74%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (76%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (76%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (79%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (79%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (82%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (82%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (85%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (85%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (88%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (88%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (90%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (90%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (93%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (96%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (96%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (99%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (99%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (99%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (102%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ❯ Optimize modules (102%)
+[INFO]      → Sealing ...
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO]  WARNING  Compiled with 1 warnings12:27:01 PM
+[INFO] 
+[INFO]  warning  
+[INFO] 
+[INFO] DefinePlugin
+[INFO] Conflicting values for 'process.env.NODE_ENV'
+[INFO] 
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ✔ Emit files
+[INFO] 
+[INFO] Webpack: Finished after 29.662 seconds.
+[INFO] 
+[INFO] Webpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ❯ Emit files
+[INFO] [GWebpack: Starting ...
+[INFO] 
+[INFO]    ✔ Compile modules
+[INFO]    ✔ Build modules
+[INFO]    ✔ Optimize modules
+[INFO]    ✔ Emit files
+[INFO] 
+[INFO] Webpack: Finished after 0.001 seconds.
+[INFO] 
+[INFO] 46 assets
+[INFO] 1192 modules
+[INFO] 
+[INFO] WARNING in DefinePlugin
+[INFO] Conflicting values for 'process.env.NODE_ENV'
+[INFO] 
+[INFO] 1 WARNING in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+[INFO] webpack 5.28.0 compiled with 2 warnings in 29633 ms
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ qr-dapio ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 73 source files to /home/ubuntu/fiap-hncloud/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ qr-dapio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 5 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ qr-dapio ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 35 source files to /home/ubuntu/fiap-hncloud/target/test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.4.4:run (default-cli) < test-compile @ qr-dapio <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.4:run (default-cli) @ qr-dapio ---
+[INFO] Attaching agents: []
+
+  [32m      ██╗[36m ██╗   ██╗ ████████╗ ███████╗   ██████╗ ████████╗ ████████╗ ███████╗
+  [32m      ██║[36m ██║   ██║ ╚══██╔══╝ ██╔═══██╗ ██╔════╝ ╚══██╔══╝ ██╔═════╝ ██╔═══██╗
+  [32m      ██║[36m ████████║    ██║    ███████╔╝ ╚█████╗     ██║    ██████╗   ███████╔╝
+  [32m██╗   ██║[36m ██╔═══██║    ██║    ██╔════╝   ╚═══██╗    ██║    ██╔═══╝   ██╔══██║
+  [32m╚██████╔╝[36m ██║   ██║ ████████╗ ██║       ██████╔╝    ██║    ████████╗ ██║  ╚██╗
+  [32m ╚═════╝ [36m ╚═╝   ╚═╝ ╚═══════╝ ╚═╝       ╚═════╝     ╚═╝    ╚═══════╝ ╚═╝   ╚═╝
+
+[94m:: JHipster 🤓  :: Running Spring Boot 2.4.4 ::
+:: https://www.jhipster.tech ::[39m
+
+[2m2021-05-08 12:27:08.055[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[kground-preinit][0;39m [36morg.jboss.logging                       [0;39m [2m:[0;39m Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[2m2021-05-08 12:27:08.055[0;39m [32m INFO[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.QrDapioApp               [0;39m [2m:[0;39m Starting QrDapioApp using Java 11.0.11 on ip-172-31-64-126 with PID 3664 (/home/ubuntu/fiap-hncloud/target/classes started by ubuntu in /home/ubuntu/fiap-hncloud)
+[2m2021-05-08 12:27:08.062[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.QrDapioApp               [0;39m [2m:[0;39m Running with Spring Boot v2.4.4, Spring v5.3.5
+[2m2021-05-08 12:27:08.072[0;39m [32m INFO[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.QrDapioApp               [0;39m [2m:[0;39m The following profiles are active: dev,api-docs
+[2m2021-05-08 12:27:10.309[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mi.m.c.u.i.logging.InternalLoggerFactory [0;39m [2m:[0;39m Using SLF4J as the default logging framework
+[2m2021-05-08 12:27:10.427[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.config.WebConfigurer     [0;39m [2m:[0;39m Registering CORS filter
+[2m2021-05-08 12:27:10.460[0;39m [32m INFO[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.config.WebConfigurer     [0;39m [2m:[0;39m Web application configuration, using profiles: dev
+[2m2021-05-08 12:27:10.460[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.config.WebConfigurer     [0;39m [2m:[0;39m Initialize H2 console
+[2m2021-05-08 12:27:10.466[0;39m [32m INFO[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mbr.com.qrdapio.config.WebConfigurer     [0;39m [2m:[0;39m Web application fully configured
+[2m2021-05-08 12:27:10.506[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mb.com.qrdapio.config.AsyncConfiguration [0;39m [2m:[0;39m Creating Async Task Executor
+[2m2021-05-08 12:27:10.571[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mb.c.q.config.LiquibaseConfiguration     [0;39m [2m:[0;39m Configuring Liquibase
+[2m2021-05-08 12:27:10.739[0;39m [33m WARN[0;39m [35m3664[0;39m [2m---[0;39m [2m[qr-dapio-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Starting Liquibase asynchronously, your database might not be ready at startup!
+Skipping auto-registration
+[2m2021-05-08 12:27:12.069[0;39m [33m WARN[0;39m [35m3664[0;39m [2m---[0;39m [2m[qr-dapio-task-1][0;39m [36mliquibase.hub                           [0;39m [2m:[0;39m Skipping auto-registration
+[2m2021-05-08 12:27:12.171[0;39m [32mDEBUG[0;39m [35m3664[0;39m [2m---[0;39m [2m[qr-dapio-task-1][0;39m [36mt.j.c.liquibase.AsyncSpringLiquibase    [0;39m [2m:[0;39m Liquibase has updated your database in 1431 ms
+[2m2021-05-08 12:27:12.368[0;39m [33m WARN[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [/home/ubuntu/fiap-hncloud/target/classes/br/com/qrdapio/config/SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.zalando.problem.spring.web.advice.security.SecurityProblemSupport': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Unsatisfied dependency expressed through method 'setClientRegistrationRepository' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/servlet/OAuth2ClientRegistrationRepositoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+[2m2021-05-08 12:27:12.417[0;39m [31mERROR[0;39m [35m3664[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration' defined in file [/home/ubuntu/fiap-hncloud/target/classes/br/com/qrdapio/config/SecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.zalando.problem.spring.web.advice.security.SecurityProblemSupport': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Unsatisfied dependency expressed through method 'setClientRegistrationRepository' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/servlet/OAuth2ClientRegistrationRepositoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at br.com.qrdapio.QrDapioApp.main(QrDapioApp.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.zalando.problem.spring.web.advice.security.SecurityProblemSupport': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Unsatisfied dependency expressed through method 'setClientRegistrationRepository' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/servlet/OAuth2ClientRegistrationRepositoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Unsatisfied dependency expressed through method 'setClientRegistrationRepository' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/servlet/OAuth2ClientRegistrationRepositoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:720)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Unsatisfied dependency expressed through method 'setClientRegistrationRepository' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/servlet/OAuth2ClientRegistrationRepositoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:720)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1451)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:760)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/autoconfigure/security/oauth2/client/servlet/OAuth2ClientRegistrationRepositoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1598)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1451)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:760)
+	... 78 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository]: Factory method 'clientRegistrationRepository' threw exception; nested exception is java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 94 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unable to resolve Configuration with the provided Issuer of "http://localhost:9080/auth/realms/jhipster"
+	at org.springframework.security.oauth2.client.registration.ClientRegistrations.getBuilder(ClientRegistrations.java:221)
+	at org.springframework.security.oauth2.client.registration.ClientRegistrations.fromIssuerLocation(ClientRegistrations.java:145)
+	at org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesRegistrationAdapter.getBuilderFromIssuerIfPossible(OAuth2ClientPropertiesRegistrationAdapter.java:83)
+	at org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesRegistrationAdapter.getClientRegistration(OAuth2ClientPropertiesRegistrationAdapter.java:59)
+	at org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesRegistrationAdapter.lambda$getClientRegistrations$0(OAuth2ClientPropertiesRegistrationAdapter.java:53)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientPropertiesRegistrationAdapter.getClientRegistrations(OAuth2ClientPropertiesRegistrationAdapter.java:52)
+	at org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientRegistrationRepositoryConfiguration.clientRegistrationRepository(OAuth2ClientRegistrationRepositoryConfiguration.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 95 common frames omitted
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9080/auth/realms/jhipster/.well-known/openid-configuration": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:670)
+	at org.springframework.security.oauth2.client.registration.ClientRegistrations.lambda$oidc$0(ClientRegistrations.java:156)
+	at org.springframework.security.oauth2.client.registration.ClientRegistrations.getBuilder(ClientRegistrations.java:209)
+	... 107 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:182)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:474)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:569)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:362)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1253)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1015)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 110 common frames omitted
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  54.587 s
+[INFO] Finished at: 2021-05-08T12:27:12Z
+[INFO] ------------------------------------------------------------------------
